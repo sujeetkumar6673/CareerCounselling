@@ -75,17 +75,6 @@
                                     <div class="loginb" id="userlogin">
                                         <a id="modal_trigger" href="#modal">Login </a>
                                     </div>
-                                    <div class="loginb" id="userdropdown" style="display: none">
-                                        <li class='detail'><a href='#'><span>Test 1</span></a> 
-                                            <ul class="" role="menu" aria-labelledby="menu1">
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-                                                <li role="presentation" class="divider"></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-                                            </ul>
-                                        </li>
-                                    </div>
 
                                 </div>
                             </div>
@@ -249,7 +238,7 @@
                 var data = $("#loginForm").serialize();
                 $.ajax({
                     type: "post",
-                    url: "Register/CheckVaildUser",
+                    url: "@Url.Action("CheckVaildUser", "Register")",
                     data: data,
                     success: function (result) {
                         if (result == "Fail") {
