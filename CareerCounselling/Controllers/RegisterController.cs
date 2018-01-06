@@ -33,6 +33,11 @@ namespace InterViewPreparation.Controllers
            
         }
 
+        /// <summary>
+        /// Check valid user.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public JsonResult CheckVaildUser(User model)
         {
             string result = "Fail";
