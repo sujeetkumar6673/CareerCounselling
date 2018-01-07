@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using CareerCounselling.Models;
 
-namespace InterViewPreparation.Controllers
+namespace CareerCounselling.Controllers
 {
     public class RegisterController : Controller
     {
@@ -17,7 +17,6 @@ namespace InterViewPreparation.Controllers
         }
 
       
-
         public JsonResult SaveData(User model)
         {
             var dataUserName = db.Users.Where(x => x.Username == model.Username).SingleOrDefault();
