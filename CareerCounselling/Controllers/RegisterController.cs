@@ -16,6 +16,8 @@ namespace InterViewPreparation.Controllers
             return View();
         }
 
+      
+
         public JsonResult SaveData(User model)
         {
             var dataUserName = db.Users.Where(x => x.Username == model.Username).SingleOrDefault();

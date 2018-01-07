@@ -1,0 +1,78 @@
+﻿<header class="popupHeader">
+    <span class="header_title">Login</span>
+    <span class="modal_close"><i class="fa fa-times"></i></span>
+</header>
+
+<section class="popupBody">
+    <!-- Social Login -->
+    <button class="loginBtn loginBtn--facebook">
+        Login with Facebook
+    </button>
+
+    <button class="loginBtn loginBtn--google">
+        Login with Google
+    </button>
+
+    <div class="centeredText">
+        <span>-----Or use your Email address-----</span>
+    </div>
+
+    <!-- Username & Password Login form -->
+    <div class="user_login">
+        <form id="loginForm">
+            <label>Email / Username</label>
+            <input type="text" name="Username" id="logUser" />
+
+            <label>Password</label>
+            <input type="password" id="logPassword" name="Password" />
+
+            <div class="action_btns">
+                @* <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i>Back</a></div>*@
+                <div class="one_half last"><a href="#" class="btn btn_red" onclick="Login()">Login</a></div>
+            </div>
+        </form>
+        <div class="signup">
+            <a href="#" class="forgot_password">Forgot password?</a>
+            <span>Don't have an account ? </span>
+            <a href="#" id="register_form" class="">Sign up</a>
+        </div>
+
+    </div>
+
+
+    <!-- Register Form -->
+    <div class="user_register">
+
+        <div id="message1">
+            <div class="alert alert-success">
+                <span class="glyphicon glyphicon-ok"></span><strong>Success Message! Your Registration is completed</strong>
+            </div>
+        </div>
+        <div id="message2">
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-remove"></span><strong>Error Message! Your Reguistration is not completed</strong>
+            </div>
+        </div>
+        <div id="message3">
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-remove"></span><strong>User name already exists.</strong>
+            </div>
+        </div>
+
+        <form id="Registration">
+            <input type="text" name="FullName" id="Fullname" placeholder="Full Name" />
+            <input type="email" name="EmailID" id="Email" placeholder="Email" />
+            <input type="text" name="ContactNumber" id="Contactnumber" placeholder="Contact Number" />
+            <input type="text" name="Username" id="User" placeholder="Username" />
+            <input type="password" name="Password" id="Password" placeholder="Password" />
+
+            <div class="action_btns">
+                <div class="one_half last"><a href="#" class="btn btn_red" onclick="SaveForm()">Register</a></div>
+            </div>
+        </form>
+        <div class="haveaccount">
+            <span>Please Click to</span>
+            <a href="#" id="login_form" class="">Login</a>
+        </div>
+    </div>
+</section>

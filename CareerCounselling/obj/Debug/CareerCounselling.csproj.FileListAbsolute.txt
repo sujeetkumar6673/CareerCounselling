@@ -135,4 +135,3 @@ E:\CareerCounselling\CareerCounselling\bin\System.Web.WebPages.Deployment.xml
 E:\CareerCounselling\CareerCounselling\bin\System.Web.WebPages.Razor.xml
 E:\CareerCounselling\CareerCounselling\obj\Debug\CareerCounselling.dll
 E:\CareerCounselling\CareerCounselling\obj\Debug\CareerCounselling.pdb
-E:\CareerCounselling\CareerCounselling\obj\Debug\CareerCounselling.csprojResolveAssemblyReference.cache
